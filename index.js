@@ -4,7 +4,7 @@ if(! JSON.parse(localStorage.getItem('tweetsData'))){
     localStorage.setItem('tweetsData', JSON.stringify(tweetsData))
     
 }
-let updatedData = JSON.parse(localStorage.getItem('tweetsData')
+let updatedData = JSON.parse(localStorage.getItem('tweetsData'))
 const feed = document.getElementById('feed')
 
 
