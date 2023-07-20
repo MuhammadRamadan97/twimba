@@ -1,6 +1,6 @@
 import {tweetsData} from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
-if(! JSON.parse(localStorage.getItem('tweetsData'){
+if(! JSON.parse(localStorage.getItem('tweetsData'))){
     localStorage.setItem('tweetsData', JSON.stringify(tweetsData))
     
 }
