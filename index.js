@@ -178,7 +178,7 @@ return feedHtml;
 
 function render() {
     localStorage.setItem('tweetsData', JSON.stringify(updatedData))
-    console.log(updatedData)
+    
     feed.innerHTML = getFeedHtml()
 }
 
