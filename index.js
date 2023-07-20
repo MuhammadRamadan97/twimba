@@ -1,6 +1,8 @@
 import {tweetsData} from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
-if(!data){localStorage.setItem('tweetsData', JSON.stringify(tweetsData))}
+if(!data){
+    console.log('local storage has been set')
+    localStorage.setItem('tweetsData', JSON.stringify(tweetsData))}
 const data = JSON.parse(localStorage.getItem('tweetsData'))
 
 let updatedData = [...data]
