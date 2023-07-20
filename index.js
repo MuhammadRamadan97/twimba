@@ -1,6 +1,6 @@
 import {tweetsData} from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
-
+localStorage.setItem('tweetsData', JSON.stringify(tweetsData))
 let updatedData = JSON.parse(localStorage.getItem('tweetsData'))
 
 const feed = document.getElementById('feed')
